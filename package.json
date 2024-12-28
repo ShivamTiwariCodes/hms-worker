@@ -15,11 +15,16 @@
     "@temporalio/worker": "^1.11.5",
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.2",
+    "custom-code-hospital1": "github:ShivamTiwariCodes/custom-code-hospital1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.7.2",
     "hms-core-sdk": "github:ShivamTiwariCodes/hms-core-sdk",
-    "hms-sdk-impl": "github:ShivamTiwariCodes/hms-sdk-impl"
+    "hms-sdk-impl": "github:ShivamTiwariCodes/hms-sdk-impl",
+    "lodash": "^4.17.21",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.13"
   }
 }

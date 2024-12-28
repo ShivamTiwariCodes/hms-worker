@@ -1,13 +1,14 @@
 import { IAppointment } from "hms-core-sdk/dist/interfaces/IAppointment";
+import { CustomArgs } from "hms-core-sdk/dist/interfaces/CustomArgs";
 
-export async function processEvent(args: any): Promise<any> {
-  const { eventType } = args;
+export async function processEvent(customArgs: CustomArgs<any>): Promise<any> {
+  const { eventType } = customArgs.args;
 
   switch(eventType) {
     case "user":
-        return processUserEvent(args);
+        return processUserEvent(customArgs);
     case "appointment":
-        return processAppointmentEvent(args);
+        return processAppointmentEvent(customArgs);
     default:
         return {err: "Invalid event type given. Given event Type : " + eventType}         
   }
